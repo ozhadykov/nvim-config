@@ -13,5 +13,10 @@ return {
       vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
       vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
       vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+      vim.api.nvim_create_autocmd("VimEnter", {
+        callback = function()
+        require("nvim-tree.api").tree.open()
+        end,
+      })
     end
 }
