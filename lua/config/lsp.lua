@@ -18,3 +18,32 @@ vim.lsp.enable("jsonls")
 
 vim.lsp.config("eslint", {})
 vim.lsp.enable("eslint")
+
+vim.lsp.config("yamlls", {
+	settings = {
+		yaml = {
+			validate = true,
+			completion = true,
+			hover = true,
+			schemas = {
+				kubernetes = {
+					"*.yaml",
+					"*.yml",
+				},
+
+				["https://json.schemastore.org/github-workflow.json"] = {
+					".github/workflows/*.yml",
+					".github/workflows/*.yaml",
+				},
+			},
+		},
+	},
+})
+
+vim.lsp.enable("yamlls")
+
+vim.lsp.config("dockerls", {})
+vim.lsp.enable("dockerls")
+
+vim.lsp.config("helm_ls", {})
+vim.lsp.enable("helm_ls")

@@ -8,6 +8,7 @@ vim.keymap.set("n", "<leader>x", ":x<CR>", { desc = "Save and quit" })
 
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
 vim.keymap.set("n", "<leader>y", ":%y+<CR>", { desc = "Copy whole file to clipboard" })
+vim.keymap.set("n", "<leader>cl", ":%d<CR>", { desc = "Clear file" })
 
 vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", { desc = "Clear search highlight" })
 

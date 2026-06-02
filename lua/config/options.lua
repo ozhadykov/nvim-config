@@ -3,10 +3,11 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 
-vim.cmd.colorscheme("jb")
+vim.cmd.colorscheme("tokyonight")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"

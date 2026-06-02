@@ -11,6 +11,9 @@ vim.api.nvim_create_autocmd("FileType", {
 		"javascript",
 		"javascriptreact",
 		"json",
+		"yaml",
+		"dockerfile",
+		"helm",
 	},
 	callback = function()
 		pcall(vim.treesitter.start)
